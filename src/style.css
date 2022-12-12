@@ -1,0 +1,17 @@
+:root {
+
+}
+
+body {
+  box-sizing: border-box;
+  overflow: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: red;
+}

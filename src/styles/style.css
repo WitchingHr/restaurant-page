@@ -19,35 +19,39 @@ body {
 .header {
   background-color: var(--bg-color);
   height: 10%;
-  display: grid;
-  grid-template-columns: 20fr 1fr;
-  grid-template-rows: 0.5fr 2fr 0.5fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  background: url(../logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  flex: 1;
+}
+
+img {
+  height: 44px;
+}
+
+.cut {
+  flex: initial;
+  width: 17px;
 }
 
 .nav {
   display: flex;
   justify-content: flex-start;
-  border-top: 10px solid red;
-  border-bottom: 10px solid red;
+  gap: 5px;
+  height: 40px;
+  border-top: 8px solid red;
+  border-bottom: 8px solid red;
 }
 
 .navBtn {
-  padding: 10px 20px;
   background-color: rgba(255, 0, 0, 0);
   color: white;
   -webkit-text-stroke: 1px black;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 28px;
   border: none;
   cursor: pointer;
 }

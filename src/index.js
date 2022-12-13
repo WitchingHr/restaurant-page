@@ -1,8 +1,11 @@
 import css from './styles/style.css';
+import Logo from './logo.png';
+import Cut from './CutOut.png';
 
 // Content wrapper
 const content = document.querySelector('.content');
 
+// Header
 const header = document.createElement('div');
 header.classList.add('header');
 content.appendChild(header);
@@ -10,6 +13,18 @@ content.appendChild(header);
 const logo = document.createElement('div');
 logo.classList.add('logo');
 header.appendChild(logo);
+
+const logoPng = new Image();
+logoPng.src = Logo;
+logo.appendChild(logoPng);
+
+const cut = document.createElement('div');
+cut.classList.add('cut');
+header.appendChild(cut);
+
+const cutPng = new Image();
+cutPng.src = Cut;
+cut.appendChild(cutPng);
 
 // Navbar
 const nav = document.createElement('div');

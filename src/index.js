@@ -1,6 +1,10 @@
+import menu from './menu';
+import foot from './footer';
 import css from './styles/style.css';
 import Logo from './logo.png';
 import Cut from './CutOut.png';
+import printMenu from './menu.js';
+import printFooter from './footer';
 
 // Content wrapper
 const content = document.querySelector('.content');
@@ -16,6 +20,7 @@ header.appendChild(logo);
 
 const logoPng = new Image();
 logoPng.src = Logo;
+logoPng.classList.add('logo-bar');
 logo.appendChild(logoPng);
 
 const cut = document.createElement('div');
@@ -24,6 +29,7 @@ header.appendChild(cut);
 
 const cutPng = new Image();
 cutPng.src = Cut;
+cutPng.classList.add('logo-bar')
 cut.appendChild(cutPng);
 
 // Navbar
@@ -33,18 +39,22 @@ content.appendChild(nav);
 
 const menuBtn = document.createElement('button');
 menuBtn.innerHTML = 'MENU';
-menuBtn.classList.add('navBtn');
+menuBtn.classList.add('nav-btn');
+menuBtn.addEventListener('click', printMenu);
 nav.appendChild(menuBtn);
 
 const contactBtn = document.createElement('button');
 contactBtn.innerHTML = 'CONTACT';
-contactBtn.classList.add('navBtn');
+contactBtn.classList.add('nav-btn');
 nav.appendChild(contactBtn);
 
 // Main
 const main = document.createElement('div');
 main.classList.add('main');
+content.appendChild(main);
 
 // Footer
 const footer = document.createElement('div');
 footer.classList.add('footer');
+content.appendChild(footer);
+printFooter();

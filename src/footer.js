@@ -1,8 +1,10 @@
+import css from './styles/footer.css';
 import Insta from './icons/instagram.png';
 import Fb from './icons/facebook.png';
 import Twitter from './icons/twitter.png';
 
 export default function printwrapper() {
+
   const footer = document.querySelector('.footer');
 
   const wrapper = document.createElement('div');

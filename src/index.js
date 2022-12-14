@@ -1,8 +1,8 @@
 import menu from './menu';
 import foot from './footer';
 import css from './styles/style.css';
-import Logo from './logo.png';
-import Cut from './CutOut.png';
+import Logo from './icons/logo.png';
+import Cut from './icons/CutOut.png';
 import printMenu from './menu.js';
 import printFooter from './footer';
 

@@ -1,15 +1,17 @@
+:root {
+  --bg-color: rgb(3, 32, 42);
+}
 .footer {
   background-color: red;
+  min-width: 320px;
 }
 
-.footer-wrapper {
-  /* display: grid; */
-  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+.footer-modules {
+  margin: 15px;
 }
 
 .footer-links {
-  padding-left: 5px;
-  margin-top: 0;
+  padding: 0;
 }
 
 ul {
@@ -25,27 +27,72 @@ li {
 a {
   text-decoration: none;
   color: white;
-  /* -webkit-text-stroke: 1px black; */
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bolder;
   white-space: nowrap;
 }
 
 .social {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
   justify-content: center;
   /* align-items: center; */
+}
+
+.connect {
   color: white;
+  font-size: 16px;
   font-weight: bolder;
 }
 
 .social-icons {
   display: flex;
-  gap: 16px;
+  justify-content: space-between;
 }
 
 .icon {
   height: 30px;
+}
+
+.info {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(160px, 225px));
+}
+
+.about-box {
+  margin-bottom: 10px;
+}
+
+.about-links {
+  white-space: normal;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.download-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dl-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.apple {
+  width: 108px;
+}
+
+.google {
+  width: 140px;
 }

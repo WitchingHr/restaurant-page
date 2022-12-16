@@ -40,7 +40,7 @@ a {
   flex-direction: column;
   gap: 15px;
   justify-content: center;
-  /* align-items: center; */
+  margin-right: 115px;
 }
 
 .connect {

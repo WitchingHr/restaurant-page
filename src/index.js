@@ -3,8 +3,6 @@ import foot from './footer';
 import css from './styles/style.css';
 import Logo from './icons/logo.png';
 import Cut from './icons/CutOut.png';
-import printMenu from './menu.js';
-import printFooter from './footer';
 
 // Content wrapper
 const content = document.querySelector('.content');
@@ -44,7 +42,7 @@ content.appendChild(nav);
 const menuBtn = document.createElement('button');
 menuBtn.innerHTML = 'MENU';
 menuBtn.classList.add('nav-btn');
-menuBtn.addEventListener('click', printMenu);
+menuBtn.addEventListener('click', menu);
 nav.appendChild(menuBtn);
 
 const contactBtn = document.createElement('button');
@@ -61,4 +59,4 @@ content.appendChild(main);
 const footer = document.createElement('div');
 footer.classList.add('footer');
 content.appendChild(footer);
-printFooter();
+foot();

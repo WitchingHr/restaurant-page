@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .header {
@@ -22,7 +22,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: 0 0 initial;
   position: sticky;
   top: 0;
   border-bottom: 8px solid red;
@@ -32,11 +31,6 @@ body {
   height: 43px;
   margin-top: 10px;
   margin-bottom: 6px;
-}
-
-.cut {
-  flex: initial;
-  width: 17px;
 }
 
 .nav {
@@ -66,5 +60,12 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .cut {
+    transform: translateX(441px);
+    transition: 0.5s ease;
+  }
 
+  .cut:hover {
+    transform: translateX(0);
+  }
 }

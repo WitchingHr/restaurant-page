@@ -2,7 +2,7 @@
   --bg-color: rgb(3, 32, 42);
 }
 .footer {
-  background-color: red;
+  background: linear-gradient(red, var(--bg-color));
   min-width: 240px;
   padding: 10px 40px 0 40px;
 }

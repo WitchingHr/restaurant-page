@@ -105,10 +105,14 @@ export default function printMenu() {
   appetizersHeader.innerHTML = 'APPETIZERS';
   appetizers.appendChild(appetizersHeader);
 
+  const appContainer = document.createElement('div');
+  appContainer.classList.add('app-container');
+  appetizers.appendChild(appContainer);
+
   menu.appetizers.forEach(item => {
     const plate = document.createElement('div');
     plate.classList.add('plate');
-    appetizers.appendChild(plate);
+    appContainer.appendChild(plate);
 
     const title = document.createElement('div');
     title.classList.add('title');
@@ -138,10 +142,14 @@ export default function printMenu() {
   dinnerHeader.innerHTML = 'DINNER';
   dinner.appendChild(dinnerHeader);
 
+  const dinContainer = document.createElement('div');
+  dinContainer.classList.add('din-container');
+  dinner.appendChild(dinContainer);
+
   menu.dinner.forEach(item => {
     const plate = document.createElement('div');
     plate.classList.add('plate');
-    dinner.appendChild(plate);
+    dinContainer.appendChild(plate);
 
     const title = document.createElement('div');
     title.classList.add('title');

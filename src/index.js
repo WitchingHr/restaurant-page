@@ -35,6 +35,10 @@ cutPng.src = Cut;
 cutPng.classList.add('logo-bar')
 cut.appendChild(cutPng);
 
+const sideDiv = document.createElement('div');
+sideDiv.classList.add('side-div');
+header.appendChild(sideDiv);
+
 // Navbar
 const nav = document.createElement('div');
 nav.classList.add('nav');

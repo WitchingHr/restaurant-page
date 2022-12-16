@@ -90,6 +90,8 @@ const menu = {
 export default function printMenu() {
   const main = document.querySelector('.main');
 
+  main.innerHTML = '';
+
   const menuWrapper = document.createElement('div');
   menuWrapper.classList.add('menu-container');
   main.appendChild(menuWrapper);

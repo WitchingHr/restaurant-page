@@ -1,0 +1,16 @@
+.address-container {
+  margin: 20px;
+}
+
+.add-contain {
+  background-color: red;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+}
+
+.located {
+  margin-top: 0;
+  font-size: 18px;
+}

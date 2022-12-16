@@ -1,9 +1,9 @@
 import menu from './menu';
+import address from './address';
 import foot from './footer';
 import css from './styles/style.css';
 import Logo from './icons/logo.png';
 import Cut from './icons/CutOut.png';
-import printMenu from './menu';
 
 // Content wrapper
 const content = document.querySelector('.content');
@@ -46,10 +46,11 @@ menuBtn.classList.add('nav-btn');
 menuBtn.addEventListener('click', menu);
 nav.appendChild(menuBtn);
 
-const contactBtn = document.createElement('button');
-contactBtn.innerHTML = 'CONTACT';
-contactBtn.classList.add('nav-btn');
-nav.appendChild(contactBtn);
+const addressBtn = document.createElement('button');
+addressBtn.innerHTML = 'ADDRESS';
+addressBtn.classList.add('nav-btn');
+addressBtn.addEventListener('click', address);
+nav.appendChild(addressBtn);
 
 // Main
 const main = document.createElement('div');

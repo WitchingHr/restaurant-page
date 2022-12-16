@@ -1,11 +1,51 @@
 import css from './styles/menu.css';
 
 const menu = {
-  lunch: [
+  appetizers: [
     {
-      plate: 'The Gregory Burger',
-      description: 'The juiciest burger to please all Gregs!',
+      plate: 'Bang Bang Steak Tips',
+      price: 18,
+      ingredients: 'fried broccoli, crispy steak tips, orange sesame glaze, scallions'
+    },
+    {
+      plate: 'Parmesan Truffle Fries',
+      price: 10,
       ingredients: ''
+    },
+    {
+      plate: 'Hand Dipped Onion Rings',
+      price: 14,
+      ingredients: ''
+    },
+    {
+      plate: 'French Onion Soup',
+      price: 9,
+      ingredients: ''
+    },
+    {
+      plate: 'Crispy Calamari',
+      price: 15,
+      ingredients: 'Cherry pepper ranch'
+    },
+    {
+      plate: 'Spinach & Artichoke Dip',
+      price: 17,
+      ingredients: 'Seasoned vita chips'
+    },
+    {
+      plate: 'Jumbo Shrimp Cocktail',
+      price: 12,
+      ingredients: ''
+    },
+    {
+      plate: 'Baked Local Oysters',
+      price: 16,
+      ingredients: 'Chorizo, sage butter, herbed crumbs'
+    },
+    {
+      plate: 'Ranch Potato Chips',
+      price: 8,
+      ingredients: 'Roasted garlic & chive'
     },
   ],
   dinner: [
@@ -54,19 +94,19 @@ export default function printMenu() {
   menuWrapper.classList.add('menu-container');
   main.appendChild(menuWrapper);
 
-  const lunch = document.createElement('div');
-  lunch.classList.add('lunch');
-  menuWrapper.appendChild(lunch);
+  const appetizers = document.createElement('div');
+  appetizers.classList.add('appetizers');
+  menuWrapper.appendChild(appetizers);
 
-  const lunchHeader = document.createElement('div');
-  lunchHeader.classList.add('meal-header');
-  lunchHeader.innerHTML = 'LUNCH';
-  lunch.appendChild(lunchHeader);
+  const appetizersHeader = document.createElement('div');
+  appetizersHeader.classList.add('meal-header');
+  appetizersHeader.innerHTML = 'APPETIZERS';
+  appetizers.appendChild(appetizersHeader);
 
-  menu.lunch.forEach(item => {
+  menu.appetizers.forEach(item => {
     const plate = document.createElement('div');
     plate.classList.add('plate');
-    lunch.appendChild(plate);
+    appetizers.appendChild(plate);
 
     const title = document.createElement('div');
     title.classList.add('title');
@@ -77,6 +117,9 @@ export default function printMenu() {
     price.classList.add('price');
     price.innerHTML = item.price;
     title.appendChild(price);
+
+    const line = document.createElement('hr');
+    plate.appendChild(line);
 
     const description = document.createElement('div');
     description.classList.add('description');
@@ -108,6 +151,9 @@ export default function printMenu() {
     price.innerHTML = item.price;
     title.appendChild(price);
 
+    const line = document.createElement('hr');
+    plate.appendChild(line);
+    
     const description = document.createElement('div');
     description.classList.add('description');
     description.innerHTML = item.ingredients;

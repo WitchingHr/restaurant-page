@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 
-.lunch,
+.appetizers,
 .dinner {
   margin: 15px 15px 0 15px;
   background-color: red;
@@ -48,6 +48,9 @@
   color: red;
 }
 
+hr {
+  width: 175px;
+}
 .description {
   font-style: italic;
   font-size: 14px;

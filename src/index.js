@@ -18,10 +18,14 @@ const logo = document.createElement('div');
 logo.classList.add('logo');
 header.appendChild(logo);
 
+const logoLink = document.createElement('a');
+logoLink.setAttribute('href', '');
+logo.appendChild(logoLink);
+
 const logoPng = new Image();
 logoPng.src = Logo;
 logoPng.classList.add('logo-bar');
-logo.appendChild(logoPng);
+logoLink.appendChild(logoPng);
 
 const cut = document.createElement('div');
 cut.classList.add('cut');

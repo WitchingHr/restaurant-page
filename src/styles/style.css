@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
   /* min-width: 320px; */
 }
 
@@ -23,6 +23,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 0 0 initial;
+  position: sticky;
+  top: 0;
+  border-bottom: 8px solid red;
 }
 
 .logo {
@@ -40,10 +44,10 @@ body {
 
 .nav {
   display: flex;
+  flex-shrink: 0;
   justify-content: flex-start;
   gap: 5px;
   height: 40px;
-  border-top: 8px solid red;
   border-bottom: 8px solid red;
 }
 

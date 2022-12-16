@@ -131,20 +131,32 @@ export default function printwrapper() {
   socialIcons.classList.add('social-icons');
   social.appendChild(socialIcons);
 
+  const instaLink = document.createElement('a');
+  instaLink.setAttribute('href', '');
+  socialIcons.appendChild(instaLink);
+
   const insta = new Image();
   insta.src = Insta;
   insta.classList.add('icon');
-  socialIcons.appendChild(insta);
+  instaLink.appendChild(insta);
+
+  const fbLink = document.createElement('a');
+  fbLink.setAttribute('href', '');
+  socialIcons.appendChild(fbLink);
 
   const fb = new Image();
   fb.src = Fb;
   fb.classList.add('icon');
-  socialIcons.appendChild(fb);
+  fbLink.appendChild(fb);
+
+  const twitterLink = document.createElement('a');
+  twitterLink.setAttribute('href', '');
+  socialIcons.appendChild(twitterLink);
 
   const twit = new Image();
   twit.src = Twitter;
   twit.classList.add('icon');
-  socialIcons.appendChild(twit);
+  twitterLink.appendChild(twit);
 
   // Download
   const downloadWrap = document.createElement('div');
@@ -161,13 +173,77 @@ export default function printwrapper() {
   dlButtons.classList.add('dl-buttons');
   downloadWrap.appendChild(dlButtons);
   
+  const appleLink = document.createElement('a');
+  appleLink.setAttribute('href', '');
+  dlButtons.appendChild(appleLink);
+
   const apple = new Image();
   apple.src = Apple;
   apple.classList.add('apple');
-  dlButtons.appendChild(apple);
+  appleLink.appendChild(apple);
 
+  const googleLink = document.createElement('a');
+  googleLink.setAttribute('href', '');
+  dlButtons.appendChild(googleLink);
+  
   const google = new Image();
   google.src = Google;
   google.classList.add('google');
-  dlButtons.appendChild(google);
+  googleLink.appendChild(google);
+
+  // Bottom
+  const bottom = document.createElement('div');
+  bottom.classList.add('bottom-wrap');
+  bottom.classList.add('footer-modules');
+  wrapper.appendChild(bottom);
+
+  const div1 = document.createElement('div');
+  div1.classList.add('copy');
+  bottom.appendChild(div1);
+
+  const copyright = document.createElement('a');
+  copyright.setAttribute('href', '');
+  copyright.classList.add('bottom-links');
+  copyright.innerHTML = '© 2022 FoodBurger';
+  div1.appendChild(copyright);
+
+  const div2 = document.createElement('div');
+  div2.classList.add('bottom-div');
+  bottom.appendChild(div2);
+
+  const terms = document.createElement('a');
+  terms.setAttribute('href', '');
+  terms.classList.add('bottom-links');
+  terms.innerHTML = 'Terms of Use';
+  div2.appendChild(terms);
+
+  const div3 = document.createElement('div');
+  div3.classList.add('bottom-div');
+  bottom.appendChild(div3);
+
+  const accessibility = document.createElement('a');
+  accessibility.setAttribute('href', '');
+  accessibility.classList.add('bottom-links');
+  accessibility.innerHTML = 'Accessibility Statement';
+  div3.appendChild(accessibility);
+  
+  const div4 = document.createElement('div');
+  div4.classList.add('bottom-div');
+  bottom.appendChild(div4);
+
+  const privacy = document.createElement('a');
+  privacy.setAttribute('href', '');
+  privacy.classList.add('bottom-links');
+  privacy.innerHTML = 'Privacy Policy';
+  div4.appendChild(privacy);
+  
+  const div5 = document.createElement('div');
+  div5.classList.add('bottom-div');
+  bottom.appendChild(div5);
+
+  const cookie = document.createElement('a');
+  cookie.setAttribute('href', '');
+  cookie.classList.add('bottom-links');
+  cookie.innerHTML = 'Cookie Preferences';
+  div5.appendChild(cookie);
 }

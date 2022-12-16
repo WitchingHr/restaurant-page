@@ -3,6 +3,7 @@ import foot from './footer';
 import css from './styles/style.css';
 import Logo from './icons/logo.png';
 import Cut from './icons/CutOut.png';
+import printMenu from './menu';
 
 // Content wrapper
 const content = document.querySelector('.content');
@@ -54,6 +55,8 @@ nav.appendChild(contactBtn);
 const main = document.createElement('div');
 main.classList.add('main');
 content.appendChild(main);
+
+menu();
 
 // Footer
 const footer = document.createElement('div');

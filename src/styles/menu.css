@@ -1,0 +1,57 @@
+:root {
+  --bg-color: rgb(3, 32, 42);
+}
+
+.menu-container {
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.lunch,
+.dinner {
+  margin: 15px 15px 0 15px;
+  background-color: red;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+.dinner {
+  margin-bottom: 15px;
+}
+
+.meal-header {
+  font-size: 26px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+.plate {
+  border: 2px solid var(--bg-color);
+  padding: 5px;
+  border-radius: 4px;
+  background-color: var(--bg-color);
+  color: white;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.price {
+  font-size: 15px;
+  margin-left: 10px;
+  color: red;
+}
+
+.description {
+  font-style: italic;
+  font-size: 14px;
+  margin: 5px 15px 0 15px;
+  text-align: center;
+  line-height: 1.5em;
+}

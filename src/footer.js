@@ -51,11 +51,15 @@ export default function printwrapper() {
   fundraising.innerHTML = 'FUNDRAISING';
   fundLi.appendChild(fundraising);
 
+  const footerFlex = document.createElement('div');
+  footerFlex.classList.add('footer-flex');
+  wrapper.appendChild(footerFlex);
+
   // About
   const infoWrapper = document.createElement('div');
   infoWrapper.classList.add('info');
   infoWrapper.classList.add('footer-modules');
-  wrapper.appendChild(infoWrapper);
+  footerFlex.appendChild(infoWrapper);
 
   const about = document.createElement('div');
   about.classList.add('connect');
@@ -120,7 +124,7 @@ export default function printwrapper() {
   const social = document.createElement('div');
   social.classList.add('social');
   social.classList.add('footer-modules');
-  wrapper.appendChild(social);
+  footerFlex.appendChild(social);
 
   const connect = document.createElement('div');
   connect.classList.add('connect');
@@ -162,7 +166,7 @@ export default function printwrapper() {
   const downloadWrap = document.createElement('div');
   downloadWrap.classList.add('footer-modules');
   downloadWrap.classList.add('download-wrap');
-  wrapper.appendChild(downloadWrap);
+  footerFlex.appendChild(downloadWrap);
   
   const download = document.createElement('div');
   download.classList.add('connect');

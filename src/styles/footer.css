@@ -4,7 +4,7 @@
 .footer {
   background-color: red;
   min-width: 240px;
-  padding: 10px 40px;
+  padding: 10px 40px 0 40px;
 }
 
 .footer-modules {
@@ -40,7 +40,7 @@ a {
   flex-direction: column;
   gap: 15px;
   justify-content: center;
-  margin-right: 115px;
+  margin-right: 35px;
 }
 
 .connect {
@@ -119,4 +119,45 @@ a {
 .copy {
   flex: 0 0 100%;
   margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info {
+    flex: 0;
+  }
+
+  .social {
+    justify-content: flex-start;
+    width: 100%;
+    flex: 0;
+    margin-right: 0;
+  }
+
+  .social-icons {
+    width: 152px;
+  }
+
+  .bottom-wrap {
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .copy {
+    flex: 1;
+  }
+
+  .bottom-div {
+    flex: initial;
+    margin-left: 20px;
+  }
 }

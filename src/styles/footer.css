@@ -3,23 +3,26 @@
 }
 .footer {
   background-color: red;
-  min-width: 320px;
+  min-width: 240px;
+  padding: 10px 40px;
 }
 
 .footer-modules {
-  margin: 15px;
+  margin-bottom: 15px;
 }
 
 .footer-links {
+  margin: 0 0 15px 0;
   padding: 0;
 }
 
 ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
 }
 
 li {
+  margin-bottom: 15px;
   list-style: none;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -63,7 +66,7 @@ a {
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(160px, 225px));
+  grid-template-columns: repeat(2, minmax(115px, 225px));
 }
 
 .about-box {
@@ -81,12 +84,11 @@ a {
 .download-wrap {
   display: inline-flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 3px;
 }
 
 .dl-buttons {
   display: flex;
-  gap: 15px;
 }
 
 .apple {

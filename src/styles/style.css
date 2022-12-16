@@ -33,6 +33,11 @@ body {
   margin-bottom: 6px;
 }
 
+.logo-png {
+  position: relative;
+  top: 1px;
+}
+
 .side-div {
   background: linear-gradient(90deg, red, var(--bg-color));
   display: block;

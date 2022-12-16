@@ -24,6 +24,7 @@ logo.appendChild(logoLink);
 const logoPng = new Image();
 logoPng.src = Logo;
 logoPng.classList.add('logo-bar');
+logoPng.classList.add('logo-png');
 logoLink.appendChild(logoPng);
 
 const cut = document.createElement('div');
